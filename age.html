@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>my wbesite</title>
+        <style>
+            *
+            {
+                font-size: 25px;
+                background: #679
+
+                }
+            div{
+                color: #123;
+                border: dashed 2px blue;
+                padding: 20px;
+                margin-left:  32%;
+                width: 200px;
+                background: #999
+            }
+            button{
+                margin-left: 33%;
+                width: 200px;
+
+            }
+        </style>
+                <script>
+            function sayAge() {
+                    "use strict";
+            var yourAge = prompt("what your age??"),
+                x = yourAge * 365, //days
+                y =  x  * 24, //hours
+                z =  y * 60, //minutes
+                f = z * 60; /*Seconds*/
+            
+                
+                  document.getElementById("test").innerHTML = 
+                                "your age is " + x + " days"  + "<br>" +
+                                "<br>" +
+                                "your age is " + y + " hours"  + "<br>" +
+                                "<br>" +                                
+                                "your age is " + z + " minutes"  + "<br>" +
+                                "<br>" +
+                                "your age is " + f + " Seconds";}
+         </script>
+    </head>
+    <body>
+        
+        <button onclick="sayAge()">write your age</button>
+        <input>
+        <div id="test">your age is......</div>
+        
+     </body>
+</html>
